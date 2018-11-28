@@ -6,29 +6,32 @@ namespace Console_Games_
 {
     internal class Jumble_Word
     {
-       private string jumble { get; set; }
-        private List<string> words { get; set; }
-        string answer = string.Empty;
+        private string _jumble { get; set; }
+        private List<string> _Words { get; set; }
+        string _answer = string.Empty;
+        int _score = 0;
 
         public Jumble_Word()
         {
-            jumble = string.Empty;
-            words = new List<string> { "python", "jumble" , "easy", "difficult", "answer", "xylophone" };
+            _jumble = string.Empty;
+            _Words = new List<string> { "python", "jumble", "easy", "difficult", "answer", "xylophone" };
         }
 
         internal void StartGame()
         {
             GameStarting();
-            for (int iword = words.Count; iword > 0; iword--)
+            for (int iword = _Words.Count; iword > 0; iword--)
             {
                 BeginTheGame();
                 for (int retry = 0; retry < 5; retry++)
                 {
                     if (ValidateAnswer(GetUserInput()))
                     {
-                        words.Remove(answer);
-                        if (words.Count == 0)
-                            Console.WriteLine("Congrats! You have completed! all the words.");
+                        _score += 1;
+                        _Words.Remove(_answer);
+                        if (_Words.Count == 0)
+                            Console.WriteLine($"You have completed! all the words."
+                                +$"{Environment.NewLine} Total Score:{_score}");
                         break;
                     }
                 }
@@ -38,14 +41,14 @@ namespace Console_Games_
         private void SetJumbleWord()
         {
             var random = new Random();
-            var word = words[random.Next(0,words.Count-1)];
-            answer = word;
+            var word = _Words[random.Next(0, _Words.Count - 1)];
+            _answer = word;
 
             while (word.Length != 0)
             {
-                var position = random.Next(word.Length-1);
-                jumble += word[position];
-                word = word.Remove(position,1);
+                var position = random.Next(word.Length - 1);
+                _jumble += word[position];
+                word = word.Remove(position, 1);
             }
         }
 
@@ -58,16 +61,16 @@ namespace Console_Games_
 
         private void BeginTheGame()
         {
-            jumble = string.Empty;
-            
+            _jumble = string.Empty;
+
             SetJumbleWord();
 
-            Console.WriteLine($"The jumble word is:{jumble}");
+            Console.WriteLine($"The jumble word is:{_jumble}");
         }
 
         private bool ValidateAnswer(string userAnswer)
         {
-            if (answer == userAnswer)
+            if (_answer == userAnswer)
             {
                 Console.WriteLine("Congrats! You have Own!");
                 return true;
