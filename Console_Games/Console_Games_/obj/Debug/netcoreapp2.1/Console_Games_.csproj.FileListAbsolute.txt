@@ -1,0 +1,11 @@
+D:\Personal\git\Source\games\Console_Games\Console_Games_\bin\Debug\netcoreapp2.1\Console_Games_.deps.json
+D:\Personal\git\Source\games\Console_Games\Console_Games_\bin\Debug\netcoreapp2.1\Console_Games_.runtimeconfig.json
+D:\Personal\git\Source\games\Console_Games\Console_Games_\bin\Debug\netcoreapp2.1\Console_Games_.runtimeconfig.dev.json
+D:\Personal\git\Source\games\Console_Games\Console_Games_\bin\Debug\netcoreapp2.1\Console_Games_.dll
+D:\Personal\git\Source\games\Console_Games\Console_Games_\bin\Debug\netcoreapp2.1\Console_Games_.pdb
+D:\Personal\git\Source\games\Console_Games\Console_Games_\obj\Debug\netcoreapp2.1\Console_Games_.csprojAssemblyReference.cache
+D:\Personal\git\Source\games\Console_Games\Console_Games_\obj\Debug\netcoreapp2.1\Console_Games_.csproj.CoreCompileInputs.cache
+D:\Personal\git\Source\games\Console_Games\Console_Games_\obj\Debug\netcoreapp2.1\Console_Games_.AssemblyInfoInputs.cache
+D:\Personal\git\Source\games\Console_Games\Console_Games_\obj\Debug\netcoreapp2.1\Console_Games_.AssemblyInfo.cs
+D:\Personal\git\Source\games\Console_Games\Console_Games_\obj\Debug\netcoreapp2.1\Console_Games_.dll
+D:\Personal\git\Source\games\Console_Games\Console_Games_\obj\Debug\netcoreapp2.1\Console_Games_.pdb
