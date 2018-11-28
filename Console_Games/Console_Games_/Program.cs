@@ -6,7 +6,8 @@ namespace Console_Games_
     {
         static void Main(string[] args)
         {
-            new Jumble_Word().StartGame();
+            // new Jumble_Word().StartGame();
+            new Guess_word().StartGame();
             Console.ReadKey();
         }
     }
